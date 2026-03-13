@@ -71,7 +71,7 @@ async function init() {
 
   // Sidebar — online
   const byOnline = [...spots].sort((a, b) => b.online - a.online);
-  document.getElementById('onlineTop').innerHTML = byOnline
+  document.getElementById('onlineTop').innerHTML = byOnline.slice(0, 5)
     .map(s => `<li>${s.name}<br>🍖 ${s.online}</li>`).join('');
 
   // Sidebar — community
@@ -84,7 +84,7 @@ async function init() {
   }
   community.sort((a, b) => b.avg - a.avg);
   document.getElementById('communityTop').innerHTML = community.length
-    ? community.map(c => `<li>${c.name}<br>🍖 ${c.avg.toFixed(1)} (${c.count})</li>`).join('')
+    ? community.slice(0, 5).map(c => `<li>${c.name}<br>🍖 ${c.avg.toFixed(1)} (${c.count})</li>`).join('')
     : '<li>No community ratings yet</li>';
 }
 
