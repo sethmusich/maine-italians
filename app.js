@@ -5,7 +5,7 @@ L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
   maxZoom: 19
 }).addTo(map);
 
-const SUPABASE_URL = 'https://qbfgjacwpoygbzsbrev.supabase.co';
+const SUPABASE_URL = 'https://qbfgjacwpoygbzsberev.supabase.co';
 const SUPABASE_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InFiZmdqYWN3cG95Z2J6c2JlcmV2Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzM0MTk1NTAsImV4cCI6MjA4ODk5NTU1MH0.Flm5Ql4eAO0Xhg0S9Hd4vUzOTQl4k-MemTArmQGfWMw';
 const db = supabase.createClient(SUPABASE_URL, SUPABASE_KEY);
 
