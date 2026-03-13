@@ -55,6 +55,7 @@ async function init() {
     marker.bindPopup(`
       <div class="popup">
         <b>${spot.name}</b>
+        <br>${spot.city || ''}
         <br>🌐 Online: 🍖 ${spot.online}
         <br>👥 Community: ${communityRating}
         <br><br>Rate it:<br>
